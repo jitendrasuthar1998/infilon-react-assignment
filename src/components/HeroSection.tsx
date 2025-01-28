@@ -13,7 +13,7 @@ const HeroSection = () => {
         <p className="text-[20px] leading-[30px] font-normal text-[#65625E]">
           At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.
         </p>
-        <button className="px-3 leading-[24px] text-[16px] py-2 w-[111px] h-[40px] bg-[#514432] text-white rounded-sm">
+        <button className="px-3 leading-[24px] text-[16px] py-2 w-[111px] h-[40px] bg-[#514432] text-white rounded-sm cursor-pointer">
           Get started
         </button>
       </div>

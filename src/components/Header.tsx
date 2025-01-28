@@ -8,7 +8,7 @@ const Header = () => {
           {/* Logo Section */}
           <div className="flex items-center gap-2 text-[#514432]">
             <img src={headerLogo} alt="Logo" className="h-8 w-auto" />
-            <span className="text-lg font-semibold md:block hidden">
+            <span className="text-lg font-normal md:block hidden font-gluten">
               Central Texas Fly Fishing
             </span>
           </div>

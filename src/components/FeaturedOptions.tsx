@@ -49,7 +49,7 @@ const FeaturedOptions = () => {
               {/* FeaturedOptions Header */}
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center py-4 text-left font-normal leading-[30px] text-[20px]"
+                className="w-full flex justify-between items-center py-4 text-left font-normal leading-[30px] text-[20px] cursor-pointer"
               >
                 {item.title}
                 <img src={openIndex == index ? upArrow : downArrow} />
@@ -70,7 +70,7 @@ const FeaturedOptions = () => {
                     <p className="text-gray-600 text-sm mt-2">
                       {item.description}
                     </p>
-                    <button className="mt-3 px-3 py-1 bg-gray-200 text-gray-700 rounded-md">
+                    <button className="mt-3 px-3 py-1 bg-gray-200 text-gray-700 rounded-md cursor-pointer">
                       Learn more
                     </button>
                   </div>
@@ -98,7 +98,7 @@ const FeaturedOptions = () => {
                   <p className="text-[#65625E] text-sm">{description}</p>
                 </div>
                 <div className="relative md:w-[240px]">
-                  <button onClick={()=> console.log("button click read more")} className="px-3 py-2 w-[110px] h-[40px] bg-[#DFDEDD] text-[#1C1812] rounded-sm text-sm leading-[21px] z-10">
+                  <button className="px-3 py-2 w-[110px] h-[40px] bg-[#DFDEDD] text-[#1C1812] rounded-sm text-sm leading-[21px] z-10 cursor-pointer">
                     Learn more
                   </button>
                 </div>

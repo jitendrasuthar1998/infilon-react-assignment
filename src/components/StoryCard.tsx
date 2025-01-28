@@ -35,13 +35,13 @@ const StoryCard = ({ story, isLastStory }: StoryCardProps) => {
         {/* Story Content */}
         <div className="w-[288px] flex flex-col gap-4 px-6">
           <div className="mx-auto w-[240px] h-max flex flex-col gap-1">
-            <h3 className="text-[32px] font-semibold text-[#000000]">
+            <h3 className="text-[32px] font-normal font-gluten text-[#000000]">
               {title}
             </h3>
             <p className="text-[#65625E] text-sm">{description}</p>
           </div>
           <div className="mx-auto w-[240px]">
-            <button className="px-2 py-1 w-22 bg-[#DFDEDD] text-[#1C1812] rounded-md hover:bg-[#5d4d40] text-sm leading-[21px]">
+            <button className="px-2 py-1 w-22 bg-[#DFDEDD] text-[#1C1812] rounded-md hover:bg-[#5d4d40] text-sm leading-[21px] cursor-pointer">
               Read more
             </button>
           </div>
@@ -52,7 +52,7 @@ const StoryCard = ({ story, isLastStory }: StoryCardProps) => {
       <div className="md:hidden flex flex-col gap-8">
         <div className="h-[1px] w-full bg-[#C6C5C3]"></div>
         <div className="flex flex-col md:hidden gap-2.5">
-          <h3 className="text-[32px] leading-[40px] font-semibold text-[#000000]">
+          <h3 className="text-[32px] leading-[40px] font-normal font-gluten text-[#000000]">
             {title}
           </h3>
           <div className="max-w-[392px] flex flex-row gap-4">
@@ -71,7 +71,7 @@ const StoryCard = ({ story, isLastStory }: StoryCardProps) => {
             </div>
           </div>
           <div className="md:mx-auto md:w-[240px]">
-            <button className="px-2 py-1 w-22 bg-[#DFDEDD] text-[#1C1812] rounded-md hover:bg-[#5d4d40] text-sm leading-[21px]">
+            <button className="px-2 py-1 w-22 bg-[#DFDEDD] text-[#1C1812] rounded-md hover:bg-[#5d4d40] text-sm leading-[21px] cursor-pointer">
               Read more
             </button>
           </div>
