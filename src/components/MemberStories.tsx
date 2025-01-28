@@ -35,7 +35,7 @@ const MemberStories = () => {
   return (
     <section className="bg-white text-white py-10 px-6 md:px-16">
       <div className="md:max-w-[1024px] mx-auto">
-        <h2 className="text-[40px] leading-[45px] font-bold text-center lg:text-left text-[#1C1812] mb-10">
+        <h2 className="text-[40px] leading-[45px] font-bold text-left sm:text-center lg:text-left text-[#1C1812] mb-10">
           Member Stories
         </h2>
 
