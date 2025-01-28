@@ -2,7 +2,7 @@ import heroImg from "../assets/hero.jpeg"
 
 const HeroSection = () => {
   return (
-    <section className="md:px-6 md:py-20 bg-white text-white md:h-[466px]">
+    <section className="mt-10 md:px-6 md:py-20 bg-white text-white md:h-[466px]">
       
       <div className="flex flex-col-reverse md:flex-row items-center justify-between md:max-w-[1024px] md:h-[308px] md:gap-6 mx-auto">
       {/* Left Text Content */}
