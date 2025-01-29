@@ -40,7 +40,7 @@ const FeaturedOptions = () => {
     <section className="px-6 md:py-20 py-10 bg-[#F1ECE1]">
       <div className="md:max-w-[1024px] mx-auto">
         {/* Section Title */}
-        <h2 className="text-5xl font-semibold leading-[54px] mb-6">Featured options</h2>
+        <h2 className="section-heading mb-6">Featured options</h2>
 
         {/* FeaturedOptions Items */}
         <div className="md:block hidden">
@@ -49,7 +49,7 @@ const FeaturedOptions = () => {
               {/* FeaturedOptions Header */}
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center py-4 text-left font-normal leading-[30px] text-[20px] cursor-pointer"
+                className="w-full flex justify-between items-center py-2 text-left font-normal leading-[30px] text-[20px] cursor-pointer border-b border-[#969491]"
               >
                 {item.title}
                 <img src={openIndex == index ? upArrow : downArrow} />
@@ -57,7 +57,7 @@ const FeaturedOptions = () => {
 
               {/* FeaturedOptions Content */}
               {openIndex === index && item.image && (
-                <div className="flex flex-row border-t border-[#969491] overflow-hidden transition-all duration-300">
+                <div className="flex flex-row overflow-hidden transition-all duration-300">
                   <div className="w-100 h-[220px]">
                     <img
                       src={item.image}
@@ -65,44 +65,53 @@ const FeaturedOptions = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="max-w-[624px] p-6">
-                    <h3 className="text-xl font-bold">{item.heading}</h3>
-                    <p className="text-gray-600 text-sm mt-2">
+                  <div className="max-w-[624px] p-6 flex flex-col gap-2">
+                    <h3 className="text-[32px] leading-[36px] font-bold">
+                      {item.heading}
+                    </h3>
+                    <p className="text-[#65625E] text-xl leading-[30px]">
                       {item.description}
                     </p>
-                    <button className="mt-3 px-3 py-1 bg-gray-200 text-gray-700 rounded-md cursor-pointer">
+                    <button className="w-max h-[29px] btn-subtle">
                       Learn more
                     </button>
                   </div>
                 </div>
               )}
-              {openIndex !== index ? <hr className="text-[#969491] bg-[#969491]"/> : null}
+              {openIndex !== index ? (
+                <hr className="text-[#969491] bg-[#969491]" />
+              ) : null}
             </div>
           ))}
         </div>
 
         <div className="flex flex-col gap-6 md:hidden ">
-          {accordionItems.map(({image,description, title}) => <div key={title} className="relative flex flex-col h-full gap-4 p-6">
-                <div
-                  className="absolute z-0 top-0 left-0 right-0 bottom-0 bg-center bg-cover"
-                  style={{
-                    backgroundImage: `url(${image})`,
-                    opacity: 0.25,
-                    pointerEvents:"none"
-                  }}
-                ></div>
-                <div className="mx-auto md:w-[240px] md:h-max flex flex-col gap-1">
-                  <h3 className="text-[20px] font-semibold text-[#000000]">
-                    {title}
-                  </h3>
-                  <p className="text-[#65625E] text-sm">{description}</p>
-                </div>
-                <div className="relative md:w-[240px]">
-                  <button className="px-3 py-2 w-[110px] h-[40px] bg-[#DFDEDD] text-[#1C1812] rounded-sm text-sm leading-[21px] z-10 cursor-pointer">
-                    Learn more
-                  </button>
-                </div>
-              </div>)}
+          {accordionItems.map(({ image, description, title }) => (
+            <div
+              key={title}
+              className="relative flex flex-col h-full gap-4 p-6"
+            >
+              <div
+                className="absolute z-0 top-0 left-0 right-0 bottom-0 bg-center bg-cover"
+                style={{
+                  backgroundImage: `url(${image})`,
+                  opacity: 0.25,
+                  pointerEvents: "none",
+                }}
+              ></div>
+              <div className="mx-auto md:w-[240px] md:h-max flex flex-col gap-1">
+                <h3 className="text-[20px] font-semibold text-[#000000]">
+                  {title}
+                </h3>
+                <p className="text-[#65625E] text-sm">{description}</p>
+              </div>
+              <div className="relative md:w-[240px]">
+                <button className="w-max h-[40px] z-10 btn-subtle">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

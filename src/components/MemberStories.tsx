@@ -35,14 +35,16 @@ const MemberStories = () => {
   return (
     <section className="bg-white text-white py-10 px-6 md:px-16">
       <div className="md:max-w-[1024px] mx-auto">
-        <h2 className="text-[40px] leading-[45px] font-bold text-left sm:text-center lg:text-left text-[#1C1812] mb-10">
-          Member Stories
-        </h2>
+        <h2 className="text-left mb-10 section-heading">Member Stories</h2>
 
         {/* Grid Layout */}
-        <div className="flex flex-row flex-wrap justify-center items-center md:max-w-[1024px] gap-12">
+        <div className="flex flex-row flex-wrap md:max-w-[1024px] gap-12">
           {stories.map((story, index) => (
-           <StoryCard story={story} key={index} isLastStory={index == stories.length - 1}/>
+            <StoryCard
+              story={story}
+              key={index}
+              isLastStory={index == stories.length - 1}
+            />
           ))}
         </div>
       </div>
