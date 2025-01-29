@@ -1,50 +1,97 @@
-# React + TypeScript + Vite
+# Landing Page V1 - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project involves creating a static homepage based on the pixel-perfect design outlined in the provided Figma document. The goal is to replicate the landing page (V1) exactly as shown in the Figma design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Task Requirements
 
-## Expanding the ESLint configuration
+- **React** front-end design, using either **React** or **React+Vite**
+- Styling using **Tailwind CSS** (or Core/Native CSS)
+- Optional use of any component libraries for additional UI components
+- Code must be **clean**, **well-structured**, and **pixel-perfect**
+- Deployment via **Netlify** (due to issues deploying via GitHub Pages)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- Pixel-perfect replication of the Figma design
+- Fully responsive layout
+- Interactive UI elements
+- Clean and modular code
+- Deployed on **Netlify** for easy preview
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tech Stack
+
+- **React** (or **React+Vite**) for the front-end
+- **Tailwind CSS** (or Core/Native CSS)
+- **React Router**
+- **TypeScript**
+
+## Deployment
+
+The website is deployed on **Netlify** due to issues faced while deploying via GitHub Pages.
+
+**Live Demo**: [Landing Page V1 on Netlify](https://infilon-react-assignment-by-jitendrasuthar1998.netlify.app/)
+
+## Setup Instructions
+
+To set up this project locally, follow these steps:
+
+### 1. Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/jitendrasuthar1998/infilon-react-assignment
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Navigate to the project directory and install the dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd landing-page-v1
+npm install
 ```
+
+### 3. Run the Development Server
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The app will be available at `http://localhost:3000`.
+
+### 4. Deploying to Netlify (Optional)
+
+If you wish to deploy this project to Netlify, follow these steps:
+
+- Push the code to your GitHub repository.
+- Go to [Netlify](https://www.netlify.com/) and sign in.
+- Create a new site from Git, and select the GitHub repository.
+- Follow the prompts to deploy the site. Netlify will automatically build and deploy the app.
+
+## Folder Structure
+
+```
+/src
+  /components  - Reusable components (if any)
+  /pages       - Different pages of Main Nav and Footer Nav
+  /assets      - Images
+  App.tsx       - Main React component
+  index.tsx     - Entry point of the app
+/public
+  index.html   - Base HTML structure
+```
+
+## Code Standards
+
+- Code is modular and reusable.
+- Consistent naming conventions and proper indentation.
+- All styles are well-organized and maintainable.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
