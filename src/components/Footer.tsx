@@ -16,7 +16,6 @@ const Footer = () => {
         <div className="flex md:flex-row flex-col items-center gap-6">
           {/* Logo */}
           <Link to={"/"}>
-            {" "}
             <img src={logo} alt="Logo" className="md:h-10 h-8 md:w-[71.63px]" />
           </Link>
 
