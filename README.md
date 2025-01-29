@@ -80,8 +80,8 @@ If you wish to deploy this project to Netlify, follow these steps:
   /components  - Reusable components (if any)
   /pages       - Different pages of Main Nav and Footer Nav
   /assets      - Images
-  App.tsx       - Main React component
-  index.tsx     - Entry point of the app
+  App.tsx      - Main React component
+  index.tsx    - Entry point of the app
 /public
   index.html   - Base HTML structure
 ```
